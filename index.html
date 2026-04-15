@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partha Ghosh — Senior Mobile Engineer | Portfolio</title>
+    <meta name="description" content="Portfolio of Partha Ghosh — Senior Mobile Engineer at Samsung R&D with 4.5+ years experience in Android, iOS, React Native, Flutter, and AI/ML.">
+    <meta name="keywords" content="Partha Ghosh, Android Developer, Mobile Engineer, Samsung, Portfolio, Kotlin, Java, React Native, Flutter">
+    <meta name="author" content="Partha Ghosh">
+    <meta property="og:title" content="Partha Ghosh — Senior Mobile Engineer">
+    <meta property="og:description" content="Android Platform & Application Engineer at Samsung R&D with 4.5+ years of experience building mobile systems at scale.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>PG<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name">Partha Ghosh</span>
+                <span class="hero-role" id="typed-role"></span>
+            </h1>
+            <p class="hero-description">
+                Senior Mobile Engineer at <strong>Samsung R&D</strong> with 4.5+ years of experience building 
+                large-scale mobile systems across <em>Android, iOS, React Native, and Flutter</em> — 
+                powering millions of Samsung devices worldwide.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="4.5">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Apps Shipped</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1800">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Issues Resolved</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="30">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">ANR Reduction</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </a>
+                <a href="#projects" class="btn btn-outline">
+                    <i class="fas fa-code"></i> View Projects
+                </a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/partha-ghosh-11893b1b3/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/AnonPartha" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://leetcode.com/u/partha_ghosh/" target="_blank" rel="noopener" aria-label="LeetCode">
+                    <i class="fas fa-code"></i>
+                </a>
+                <a href="mailto:parthapratimghose@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="avatar-container">
+                <div class="avatar-ring"></div>
+                <div class="avatar-ring avatar-ring-2"></div>
+                <div class="avatar-inner">
+                    <svg viewBox="0 0 200 200" class="avatar-svg">
+                        <defs>
+                            <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#6366f1"/>
+                                <stop offset="100%" style="stop-color:#8b5cf6"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="100" cy="100" r="95" fill="url(#avatarGrad)" opacity="0.15"/>
+                        <circle cx="100" cy="78" r="32" fill="url(#avatarGrad)" opacity="0.6"/>
+                        <path d="M 40 160 Q 40 115 100 115 Q 160 115 160 160" fill="url(#avatarGrad)" opacity="0.6"/>
+                        <text x="100" y="105" text-anchor="middle" fill="white" font-size="48" font-weight="700" font-family="Inter">PG</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="floating-tech floating-tech-1">
+                <i class="fab fa-android"></i>
+            </div>
+            <div class="floating-tech floating-tech-2">
+                <i class="fab fa-react"></i>
+            </div>
+            <div class="floating-tech floating-tech-3">
+                <i class="fab fa-python"></i>
+            </div>
+            <div class="floating-tech floating-tech-4">
+                <i class="fab fa-apple"></i>
+            </div>
+            <div class="floating-tech floating-tech-5">
+                <i class="fab fa-flutter" style="font-size:inherit;">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.357zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37z"/></svg>
+                </i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+                <h2 class="section-title">Crafting Mobile Experiences at Scale</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-lead">
+                        I'm a <strong>Senior Mobile Engineer</strong> at <strong>Samsung Research & Development Institute, Noida</strong>, 
+                        where I build platform components, system-level features, and cross-platform mobile architectures 
+                        that power millions of Samsung devices globally.
+                    </p>
+                    <p>
+                        With expertise spanning the full SDLC across <strong>Android 11 through 17</strong>, I specialize in 
+                        building OneUI system features using Kotlin, Java, and Jetpack Compose. My work includes developing 
+                        core Samsung Enterprise Standard Libraries, building cross-platform modules with React Native and Flutter, 
+                        and integrating AI/ML pipelines into mobile systems.
+                    </p>
+                    <p>
+                        Beyond mobile development, I've contributed to <strong>CI/CD pipeline improvements</strong>, 
+                        <strong>security hardening</strong> (AES encryption, Android Keystore, certificate pinning), 
+                        and <strong>production monitoring</strong> using Splunk and NewRelic. I'm passionate about solving 
+                        complex engineering problems and delivering robust, performant mobile experiences.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fab fa-android"></i></div>
+                            <div>
+                                <h4>Android Expert</h4>
+                                <p>AOSP, OneUI, Jetpack Compose, System frameworks</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-mobile-alt"></i></div>
+                            <div>
+                                <h4>Cross-Platform</h4>
+                                <p>React Native, Flutter, Kotlin Multiplatform</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-brain"></i></div>
+                            <div>
+                                <h4>AI/ML Integration</h4>
+                                <p>PyTorch, NLP pipelines, Transformer models</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <h4>Security & Performance</h4>
+                                <p>OWASP, Encryption, Profiling, Monitoring</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="info-card">
+                        <h3 class="info-card-title"><i class="fas fa-id-card"></i> Quick Info</h3>
+                        <ul class="info-list">
+                            <li><span class="info-label">Name</span><span class="info-value">Partha Pratim Ghosh</span></li>
+                            <li><span class="info-label">Role</span><span class="info-value">Senior Mobile Engineer</span></li>
+                            <li><span class="info-label">Company</span><span class="info-value">Samsung R&D, Noida</span></li>
+                            <li><span class="info-label">Experience</span><span class="info-value">4.5+ Years</span></li>
+                            <li><span class="info-label">Location</span><span class="info-value">Noida, India</span></li>
+                            <li><span class="info-label">Education</span><span class="info-value">B.Tech, NIT Silchar</span></li>
+                            <li><span class="info-label">CGPA</span><span class="info-value">8.68 / 10</span></li>
+                        </ul>
+                        <div class="info-card-cta">
+                            <a href="mailto:parthapratimghose@gmail.com" class="btn btn-primary btn-sm">
+                                <i class="fas fa-envelope"></i> Email Me
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-cogs"></i> Technical Skills</span>
+                <h2 class="section-title">Technologies & Tools I Work With</h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3>Languages & IDEs</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag-primary">Kotlin</span>
+                        <span class="skill-tag skill-tag-primary">Java</span>
+                        <span class="skill-tag skill-tag-secondary">Swift</span>
+                        <span class="skill-tag skill-tag-secondary">Objective-C</span>
+                        <span class="skill-tag skill-tag-accent">Dart</span>
+                        <span class="skill-tag skill-tag-accent">JavaScript</span>
+                        <span class="skill-tag skill-tag-accent">TypeScript</span>
+                        <span class="skill-tag skill-tag-secondary">Python</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">IntelliJ IDEA</span>
+                    </div>
+                </div>
+
+                <!-- Architecture -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h3>Architecture & Design</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag-primary">Clean Architecture</span>
+                        <span class="skill-tag skill-tag-primary">MVVM</span>
+                        <span class="skill-tag skill-tag-primary">MVI</span>
+                        <span class="skill-tag skill-tag-secondary">MVP</span>
+                        <span class="skill-tag skill-tag-secondary">MVC</span>
+                        <span class="skill-tag skill-tag-accent">VIPER</span>
+                        <span class="skill-tag">SOLID Principles</span>
+                        <span class="skill-tag">Repository Pattern</span>
+                        <span class="skill-tag">Modular Architecture</span>
+                    </div>
+                </div>
+
+                <!-- Android -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fab fa-android"></i></div>
+                        <h3>Android Framework</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag-primary">Jetpack Compose</span>
+                        <span class="skill-tag skill-tag-primary">AOSP</span>
+                        <span class="skill-tag skill-tag-primary">OneUI</span>
+                        <span class="skill-tag skill-tag-secondary">ViewModel</span>
+                        <span class="skill-tag skill-tag-secondary">LiveData</span>
+                        <span class="skill-tag skill-tag-secondary">Room</span>
+                        <span class="skill-tag skill-tag-accent">Navigation</span>
+                        <span class="skill-tag skill-tag-accent">Paging3</span>
+                        <span class="skill-tag">MotionLayout</span>
+                        <span class="skill-tag">AIDL IPC</span>
+                        <span class="skill-tag">Coroutines</span>
+                        <span class="skill-tag">Hilt / Dagger</span>
+                        <span class="skill-tag">Sesl Libraries</span>
+                    </div>
+                </div>
+
+                <!-- iOS -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fab fa-apple"></i></div>
+                        <h3>iOS Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag-primary">SwiftUI</span>
+                        <span class="skill-tag skill-tag-primary">UIKit</span>
+                        <span class="skill-tag skill-tag-secondary">Combine</span>
+                        <span class="skill-tag skill-tag-secondary">CoreData</span>
+                        <span class="skill-tag skill-tag-accent">GCD</span>
+                        <span class="skill-tag skill-tag-accent">async/await</span>
+                        <span class="skill-tag">CoreAnimation</span>
+                    </div>
+                </div>
+
+                <!-- Cross Platform -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Cross-Platform</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag-primary">React Native</span>
+                        <span class="skill-tag skill-tag-primary">Flutter</span>
+                        <span class="skill-tag skill-tag-secondary">KMP</span>
+                        <span class="skill-tag skill-tag-accent">Platform Channels</span>
+                        <span class="skill-tag skill-tag-accent">Native Modules</span>
+                        <span class="skill-tag">TurboModules</span>
+                        <span class="skill-tag">Hermes</span>
+                    </div>
+                </div>
+
+                <!-- Libraries & Reactive -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Libraries & Networking</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag-primary">Retrofit</span>
+                        <span class="skill-tag skill-tag-primary">OkHttp</span>
+                        <span class="skill-tag skill-tag-secondary">GraphQL</span>
+                        <span class="skill-tag skill-tag-secondary">RxJava</span>
+                        <span class="skill-tag skill-tag-accent">Kotlin Flow</span>
+                        <span class="skill-tag">Koin</span>
+                        <span class="skill-tag">Media3</span>
+                        <span class="skill-tag">ExoPlayer</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">WebRTC</span>
+                    </div>
+                </div>
+
+                <!-- Testing -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-vial"></i></div>
+                        <h3>Testing & Automation</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag-primary">JUnit</span>
+                        <span class="skill-tag skill-tag-primary">Mockk</span>
+                        <span class="skill-tag skill-tag-secondary">Robolectric</span>
+                        <span class="skill-tag skill-tag-secondary">Mockito</span>
+                        <span class="skill-tag skill-tag-accent">Appium</span>
+                        <span class="skill-tag skill-tag-accent">Espresso</span>
+                        <span class="skill-tag">UI Automator</span>
+                        <span class="skill-tag">TDD</span>
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <h3>DevOps & Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag-primary">Azure DevOps</span>
+                        <span class="skill-tag skill-tag-primary">Git</span>
+                        <span class="skill-tag skill-tag-secondary">Fastlane</span>
+                        <span class="skill-tag skill-tag-secondary">GitHub Actions</span>
+                        <span class="skill-tag skill-tag-accent">Gerrit</span>
+                        <span class="skill-tag skill-tag-accent">Docker</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Swagger</span>
+                        <span class="skill-tag">ProGuard / R8</span>
+                        <span class="skill-tag">Snyk</span>
+                        <span class="skill-tag">Jira</span>
+                    </div>
+                </div>
+
+                <!-- Performance -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <h3>Performance & Monitoring</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag-primary">Splunk</span>
+                        <span class="skill-tag skill-tag-primary">NewRelic</span>
+                        <span class="skill-tag skill-tag-secondary">LeakCanary</span>
+                        <span class="skill-tag skill-tag-secondary">Systrace</span>
+                        <span class="skill-tag skill-tag-accent">Perfetto</span>
+                        <span class="skill-tag">MAT</span>
+                        <span class="skill-tag">Android Profiler</span>
+                        <span class="skill-tag">Instruments</span>
+                    </div>
+                </div>
+
+                <!-- AI/ML -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <h3>AI / Machine Learning</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag-primary">PyTorch</span>
+                        <span class="skill-tag skill-tag-secondary">NLP Pipelines</span>
+                        <span class="skill-tag skill-tag-accent">Transformer Models</span>
+                        <span class="skill-tag">LLM Workflows</span>
+                        <span class="skill-tag">GitHub Copilot</span>
+                        <span class="skill-tag">Intent Classification</span>
+                    </div>
+                </div>
+
+                <!-- Security -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Security</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag-primary">OWASP Mobile Top 10</span>
+                        <span class="skill-tag skill-tag-secondary">AES / RSA Encryption</span>
+                        <span class="skill-tag skill-tag-accent">Certificate Pinning</span>
+                        <span class="skill-tag">Android Keystore</span>
+                        <span class="skill-tag">Keychain</span>
+                        <span class="skill-tag">Secure Storage</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3>Databases & Storage</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag-primary">Room DB</span>
+                        <span class="skill-tag skill-tag-primary">SQLite</span>
+                        <span class="skill-tag skill-tag-secondary">CoreData</span>
+                        <span class="skill-tag skill-tag-accent">DataStore</span>
+                        <span class="skill-tag">SharedPreferences</span>
+                        <span class="skill-tag">Firebase Firestore</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Experience</span>
+                <h2 class="section-title">Professional Journey</h2>
+            </div>
+            <div class="timeline">
+                <!-- Software Engineer -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-role-info">
+                                <h3>Software Engineer — Android</h3>
+                                <p class="timeline-company">
+                                    <i class="fas fa-building"></i> Samsung Research & Development Institute, Noida
+                                </p>
+                            </div>
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar-alt"></i> Jul 2022 — Present
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="timeline-summary">
+                                Platform & Application Development — Building Android framework components, cross-platform mobile modules, 
+                                and AI-powered features used across millions of Samsung devices.
+                            </p>
+                            <div class="experience-details">
+                                <div class="exp-category">
+                                    <h4><i class="fas fa-cube"></i> Platform & Framework</h4>
+                                    <ul>
+                                        <li>Developed Android framework components for <strong>Settings, Notifications, and Wallpaper</strong> modules across Android 11–17</li>
+                                        <li>Built and released <strong>15+ OneUI applications</strong> used across millions of Samsung devices</li>
+                                        <li>Developed core UI components in Samsung Enterprise Standard Libraries including <strong>SeslRecyclerView, SeslDatePicker, SeslTimePicker, SeslPreference, and SeslColorPicker</strong></li>
+                                        <li>Contributed to Android Settings architecture including controller design for Android 12–17 transitions</li>
+                                    </ul>
+                                </div>
+                                <div class="exp-category">
+                                    <h4><i class="fas fa-chart-line"></i> Performance & Stability</h4>
+                                    <ul>
+                                        <li>Resolved <strong>1,800+ production issues</strong> improving stability, performance, and reliability</li>
+                                        <li>Reduced <strong>ANR occurrences by 30%</strong> through coroutine-based refactoring and optimized main-thread scheduling</li>
+                                        <li>Improved rendering performance by optimizing layout hierarchies and reducing GPU overdraw</li>
+                                        <li>Reduced memory footprint using heap analysis, leak detection, and lifecycle optimization</li>
+                                    </ul>
+                                </div>
+                                <div class="exp-category">
+                                    <h4><i class="fas fa-mobile-alt"></i> Cross-Platform Development</h4>
+                                    <ul>
+                                        <li>Built cross-platform modules using <strong>React Native and Flutter</strong> with native Android/iOS performance layers</li>
+                                        <li>Built <strong>AGSL-based dynamic wallpaper module</strong> in Samsung Themes App</li>
+                                        <li>Built <strong>Settings Sync features</strong> using React Native for Smart Switch app</li>
+                                        <li>Implemented native bridges and platform channels for cross-platform to system-level communication</li>
+                                    </ul>
+                                </div>
+                                <div class="exp-category">
+                                    <h4><i class="fas fa-shield-alt"></i> Security & DevOps</h4>
+                                    <ul>
+                                        <li>Implemented secure data handling with <strong>AES encryption, Android Keystore, and certificate pinning</strong></li>
+                                        <li>Integrated <strong>Snyk vulnerability scanning</strong> for framework security compliance</li>
+                                        <li>Contributed to CI/CD improvements using <strong>Fastlane and Azure DevOps</strong></li>
+                                        <li>Authored <strong>100+ unit tests</strong> using JUnit, Mockk, ensuring zero-regression during upgrades</li>
+                                    </ul>
+                                </div>
+                                <div class="exp-category">
+                                    <h4><i class="fas fa-brain"></i> AI/ML Integration</h4>
+                                    <ul>
+                                        <li>Developed intelligent mobile features powered by <strong>NLP models and ML pipelines</strong></li>
+                                        <li>Integrated AI-powered search capabilities into Android Settings</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intern -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-role-info">
+                                <h3>Software Engineering Intern</h3>
+                                <p class="timeline-company">
+                                    <i class="fas fa-building"></i> Samsung Research & Development Institute, Noida
+                                </p>
+                            </div>
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar-alt"></i> Jan 2022 — Jun 2022
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Developed an <strong>AI-powered Settings Search</strong> system using Python, PyTorch, and Android framework APIs</li>
+                                <li>Built <strong>ML pipelines</strong> to generate training data and improve intent recognition and search ranking</li>
+                                <li>Contributed to Android Settings architecture including controller design and search indexables</li>
+                                <li>Built lightweight neural network models using PyTorch for <strong>intent classification</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-rocket"></i> Projects</span>
+                <h2 class="section-title">Featured Work</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">eKutir — Farmer Management App</h3>
+                        <p class="project-description">
+                            Designed and delivered a farmer agent management app in Kotlin Multiplatform (KMM) for kind 
+                            and cash support to farmers, sponsored by Ashoka Fellowship and corporate CSR. Pilot program 
+                            collaboration with Karnataka Farmers Association.
+                        </p>
+                        <div class="project-tech">
+                            <span>Kotlin Multiplatform</span>
+                            <span>KMM</span>
+                            <span>Clean Architecture</span>
+                            <span>CSR Initiative</span>
+                        </div>
+                        <div class="project-impact">
+                            <i class="fas fa-leaf"></i> Social Impact — Empowering farmers through technology
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Settings Neural AI Search</h3>
+                        <p class="project-description">
+                            Designed and implemented a neural language search system integrating PyTorch NLP models, 
+                            Python data pipelines, and Android framework search APIs to improve query relevance 
+                            and intent recognition accuracy. Optimized model inference for virtualized environments.
+                        </p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>NLP</span>
+                            <span>Python</span>
+                            <span>Android Framework</span>
+                            <span>AOSP</span>
+                        </div>
+                        <div class="project-impact">
+                            <i class="fas fa-chart-line"></i> Improved search relevance across Samsung devices
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Switch Settings Transfer</h3>
+                        <p class="project-description">
+                            Developed a cross-platform mobile module using React Native enabling secure 
+                            device-to-device migration of user settings. Implemented native bridges for 
+                            seamless data transfer between Android devices.
+                        </p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Native Modules</span>
+                            <span>Data Migration</span>
+                            <span>Security</span>
+                        </div>
+                        <div class="project-impact">
+                            <i class="fas fa-users"></i> Used by millions during device upgrades
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Favourite Settings — Cloud Sync</h3>
+                        <p class="project-description">
+                            Built a cloud-synced Android feature using Room DB, AIDL IPC, Jetpack Compose UI, 
+                            and Samsung Account APIs. Architected cross-device synchronization ensuring consistent 
+                            user data across distributed device infrastructure under MVI architecture.
+                        </p>
+                        <div class="project-tech">
+                            <span>Jetpack Compose</span>
+                            <span>Room DB</span>
+                            <span>AIDL IPC</span>
+                            <span>MVI</span>
+                            <span>Samsung Cloud</span>
+                        </div>
+                        <div class="project-impact">
+                            <i class="fas fa-sync"></i> Seamless sync across OneUI devices
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AGSL Dynamic Themes App</h3>
+                        <p class="project-description">
+                            Built a real-time dynamic themes app using Flutter supporting weather and time-based 
+                            animations with AGSL-based rendering. Cross-platform dynamic wallpaper module 
+                            integrated into Samsung Themes.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>AGSL</span>
+                            <span>Shader Programming</span>
+                            <span>Dynamic UI</span>
+                        </div>
+                        <div class="project-impact">
+                            <i class="fas fa-paint-brush"></i> Dynamic visual experiences for Samsung users
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Firebase Chat Application</h3>
+                        <p class="project-description">
+                            Built a real-time messaging app using MVVM, Firebase Firestore, and FCM. 
+                            Integrated OkHttp for networking, Snyk for dependency security, and implemented 
+                            custom message animations and presence tracking.
+                        </p>
+                        <div class="project-tech">
+                            <span>Firebase</span>
+                            <span>MVVM</span>
+                            <span>FCM</span>
+                            <span>OkHttp</span>
+                            <span>Kotlin</span>
+                        </div>
+                        <div class="project-impact">
+                            <i class="fas fa-bolt"></i> Real-time messaging with security-first approach
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Chatbot</h3>
+                        <p class="project-description">
+                            Developed an intent-based chatbot using PyTorch and NLP pipelines. Built the Android 
+                            interface using Kotlin with JUnit/Mockito tests to validate conversation flow logic 
+                            and response generation.
+                        </p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>NLP</span>
+                            <span>Kotlin</span>
+                            <span>JUnit</span>
+                            <span>AI/ML</span>
+                        </div>
+                        <div class="project-impact">
+                            <i class="fas fa-brain"></i> AI-driven conversational experience
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-trophy"></i> Achievements</span>
+                <h2 class="section-title">Recognition & Awards</h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon achievement-icon-gold">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Employee of the Quarter</h3>
+                        <p class="achievement-period">Q1 2025 & Q2 2024</p>
+                        <p class="achievement-desc">Recognized twice for outstanding contributions to Samsung mobile platform and system stability.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon achievement-icon-blue">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Samsung Excellence Award</h3>
+                        <p class="achievement-period">Q3 2025</p>
+                        <p class="achievement-desc">Prestigious award for exceptional engineering excellence and impact on Samsung products.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon achievement-icon-purple">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Samsung SWC Professional Certification</h3>
+                        <p class="achievement-period">Advanced & Professional Levels</p>
+                        <p class="achievement-desc">Certified in Algorithms & System Design at both Advanced and Professional levels within Samsung's internal certification program.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon achievement-icon-green">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Cultural Index Champion</h3>
+                        <p class="achievement-period">2024</p>
+                        <p class="achievement-desc">Leadership recognition for coordinating cross-team initiatives and mentoring across 70+ engineers at Samsung R&D.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon achievement-icon-orange">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>NIT Silchar — CGPA 8.68</h3>
+                        <p class="achievement-period">2018 — 2022</p>
+                        <p class="achievement-desc">Graduated with distinction in Electronics and Instrumentation Engineering from one of India's premier National Institutes of Technology.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon achievement-icon-red">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>1,800+ Production Issues Resolved</h3>
+                        <p class="achievement-period">Ongoing</p>
+                        <p class="achievement-desc">Consistently resolved critical production issues improving stability and reliability across Samsung's mobile ecosystem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-graduation-cap"></i> Education</span>
+                <h2 class="section-title">Academic Background</h2>
+            </div>
+            <div class="education-card">
+                <div class="edu-logo">
+                    <div class="edu-logo-inner">NIT</div>
+                </div>
+                <div class="edu-details">
+                    <h3>National Institute of Technology, Silchar</h3>
+                    <p class="edu-degree">B.Tech — Electronics and Instrumentation Engineering</p>
+                    <div class="edu-meta">
+                        <span><i class="fas fa-calendar-alt"></i> 2018 — 2022</span>
+                        <span><i class="fas fa-star"></i> CGPA: 8.68 / 10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Contact</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">
+                    I'm always open to discussing new opportunities, interesting projects, 
+                    or just chatting about mobile engineering and technology.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:parthapratimghose@gmail.com" class="contact-card" id="contact-email">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>parthapratimghose@gmail.com</p>
+                </a>
+                <a href="tel:+917002718583" class="contact-card" id="contact-phone">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Phone</h3>
+                    <p>+91-7002718583</p>
+                </a>
+                <a href="https://www.linkedin.com/in/partha-ghosh-11893b1b3/" target="_blank" class="contact-card" id="contact-linkedin">
+                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/partha-ghosh</p>
+                </a>
+                <a href="https://github.com/AnonPartha" target="_blank" class="contact-card" id="contact-github">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub</h3>
+                    <p>github.com/AnonPartha</p>
+                </a>
+                <a href="https://leetcode.com/u/partha_ghosh/" target="_blank" class="contact-card" id="contact-leetcode">
+                    <div class="contact-icon"><i class="fas fa-code"></i></div>
+                    <h3>LeetCode</h3>
+                    <p>leetcode.com/partha_ghosh</p>
+                </a>
+                <div class="contact-card" id="contact-location">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Location</h3>
+                    <p>Noida, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Partha Ghosh<span class="logo-bracket"> /&gt;</span>
+                </div>
+                <p class="footer-text">Senior Mobile Engineer @ Samsung R&D — Building the future of mobile, one pixel at a time.</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/partha-ghosh-11893b1b3/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/AnonPartha" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://leetcode.com/u/partha_ghosh/" target="_blank" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+                    <a href="mailto:parthapratimghose@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2025 Partha Ghosh. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
